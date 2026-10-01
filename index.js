@@ -8,6 +8,7 @@ app.use(express.json());
 app.listen(PORT,()=>{
     console.log(`server is succesfully run at ${PORT}`);
 })
+console.log("this is for fun");
 const router=require("./routes/blogs");
  app.use("/api/v1",router);
 const dbConnect=require("./config/database");
